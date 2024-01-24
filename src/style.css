@@ -1,0 +1,92 @@
+body {
+  background-image: url("../hosun.png");
+  background-repeat: repeat;
+  background-size: 10%;
+}
+
+.container {
+  background-color: white;
+  min-height: 100vh;
+  max-width: 60vw;
+}
+#todo__addButton {
+  background-color: green;
+  color: white;
+}
+
+#todo__addBar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+#todo_status {
+  display: flex;
+  position: relative;
+  padding: 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+#under-line {
+  position: absolute;
+  background-color: pink;
+  width: 0px;
+  height: 4px;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  transition: 0.5s;
+}
+
+#todo_status div:nth-child(2),
+#todo_status div:nth-child(3),
+#todo_status div:last-child {
+  margin: 0px 10px;
+  font-size: large;
+  padding: 10px 0px;
+}
+
+#todo-list {
+  background-color: beige;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.todo-task {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+#task-content {
+  text-decoration: line-through;
+}
+
+header {
+  text-align: center;
+  padding: 30px 0;
+  font-size: larger;
+  font-weight: 600;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: white;
+}
+
+#main-screen {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+#todo-task__button i {
+  pointer-events: none;
+}
+
+#todo-task__button button {
+  background-color: beige;
+}
+
+#todo-task__button i {
+  transition: all 0.5s ease-in-out;
+}
